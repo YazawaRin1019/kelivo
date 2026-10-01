@@ -29,6 +29,76 @@ class ThemePalettes {
   static const String terracottaId = 'terracotta';
   static const String monochromeId = 'monochrome';
   static const String docThemeId = 'doc_theme';
+  // Cobalt Gazette: KMCP 钴蓝档案刊（奶油纸 × 克莱因蓝 × 芥末黄）
+  // 与 KUI 面板 v13「COBALT GAZETTE」同一套设计语言。
+  static const String cobaltGazetteId = 'cobalt_gazette';
+  static const ThemePalette cobaltGazette = ThemePalette(
+    id: cobaltGazetteId,
+    zhName: '钴蓝档案刊',
+    enName: 'Cobalt Gazette',
+    light: ColorScheme(
+      brightness: Brightness.light,
+      primary: Color(0xFF002FA7),
+      onPrimary: Color(0xFFFFFFFF),
+      primaryContainer: Color(0xFFDCE4FB),
+      onPrimaryContainer: Color(0xFF001B66),
+      secondary: Color(0xFF403D31),
+      onSecondary: Color(0xFFFFFFFF),
+      secondaryContainer: Color(0xFFEDEBDF),
+      onSecondaryContainer: Color(0xFF1B1912),
+      tertiary: Color(0xFF8A742F),
+      onTertiary: Color(0xFFFFFFFF),
+      tertiaryContainer: Color(0xFFF0E6C8),
+      onTertiaryContainer: Color(0xFF2E2710),
+      error: Color(0xFFB3261E),
+      onError: Color(0xFFFFFFFF),
+      errorContainer: Color(0xFFF9DEDC),
+      onErrorContainer: Color(0xFF410E0B),
+      surface: Color(0xFFFCFBF5),
+      onSurface: Color(0xFF1B1912),
+      onSurfaceVariant: Color(0xFF6B675A),
+      outline: Color(0xFF8B8776),
+      outlineVariant: Color(0xFFE5E2D6),
+      shadow: Color(0xFF000000),
+      scrim: Color(0xFF000000),
+      inverseSurface: Color(0xFF1B1912),
+      onInverseSurface: Color(0xFFF8F7F4),
+      inversePrimary: Color(0xFF9FB4F5),
+      surfaceTint: Color(0xFF002FA7),
+    ),
+    dark: ColorScheme(
+      brightness: Brightness.dark,
+      primary: Color(0xFF9FB4F5),
+      onPrimary: Color(0xFF001B66),
+      primaryContainer: Color(0xFF002FA7),
+      onPrimaryContainer: Color(0xFFDCE4FB),
+      secondary: Color(0xFFC4C0B0),
+      onSecondary: Color(0xFF1B1912),
+      secondaryContainer: Color(0xFF403D31),
+      onSecondaryContainer: Color(0xFFEDEBDF),
+      tertiary: Color(0xFFD4B872),
+      onTertiary: Color(0xFF2E2710),
+      tertiaryContainer: Color(0xFF6B5A24),
+      onTertiaryContainer: Color(0xFFF0E6C8),
+      error: Color(0xFFF2B8B5),
+      onError: Color(0xFF601410),
+      errorContainer: Color(0xFF8C1D18),
+      onErrorContainer: Color(0xFFF9DEDC),
+      surface: Color(0xFF14130E),
+      onSurface: Color(0xFFE8E4D8),
+      onSurfaceVariant: Color(0xFFB5B1A0),
+      outline: Color(0xFF6B675A),
+      outlineVariant: Color(0xFF2E2C22),
+      shadow: Color(0xFF000000),
+      scrim: Color(0xFF000000),
+      inverseSurface: Color(0xFFF8F7F4),
+      onInverseSurface: Color(0xFF1B1912),
+      inversePrimary: Color(0xFF002FA7),
+      surfaceTint: Color(0xFF9FB4F5),
+    ),
+  );
+
+
 
   static const ThemePalette defaultPalette = ThemePalette(
     id: defaultId,
@@ -640,6 +710,7 @@ class ThemePalettes {
     terracotta,
     monochrome,
     docTheme,
+    cobaltGazette,
   ];
 
   /// Id of the user-customized palette (built at runtime from the selected
